@@ -1,0 +1,53 @@
+POST https://info-m7nmjtkv-westeurope.openai.azure.com/openai/deployments/gpt-4o/chat/completions
+    ?api-version=2024-10-01-preview
+content-type: application/json
+api-key: 5XgxhlayDpqdPd4JFWvMNMwsWTt3dhEiIWOfIx1EzxgJmTH3pcWdJQQJ99BBAC5RqLJXJ3w3AAAAACOGbmo7
+
+
+{
+    "messages":[
+        {
+            "role":"system",
+            "content":[
+                {
+                    "type":"text",
+                    "text":"L'utente è un assistente per l'intelligenza artificiale che consente alle persone di trovare informazioni."
+                }
+            ]
+        },
+        {
+            "role":"user",
+            "content":[
+                {
+                    "type":"text",
+                    "text":"dammi un sinonimo di stanco"
+                }
+            ]
+        },
+        {
+            "role":"assistant",
+            "content":[
+                {
+                    "type":"text",
+                    "text":"Un sinonimo di \"stanco\" è \"affaticato\"."
+                }
+            ]
+        },
+        {
+            "role":"user",
+            "content":[
+                {
+                    "type":"text",
+                    "text":"un altro"
+                }
+            ]
+        }
+    ],
+    "temperature":0.7,
+    "top_p":0.95,
+    "frequency_penalty":0,
+    "presence_penalty":0,
+    "max_tokens":800,
+    "stop":null,
+    "stream":true
+}
